@@ -1,11 +1,12 @@
 
 import React, { useState } from 'react';
 import { Card, Col, Container } from 'react-bootstrap';
+import initializeAuthentication from '../../Firebase/firebase.init';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import "./Home.css"
 
-
+initializeAuthentication();
 const Home = () => {
     const [isSignUp, setisSignUp] = useState(false)
     return (
